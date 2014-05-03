@@ -1,0 +1,1 @@
+var Castle = function(name){ this.name = name; this.Build = function() {   console.log(this.name); };}var instance1 = new Castle("Winterfell");var instance2 = new Castle("Harrenhall");instance1.Build = function(){ console.log("Moat Cailin");}instance1.Build(); //prints “Moat Cailin”instance2.Build(); //prints “Harrenhall” to the console
