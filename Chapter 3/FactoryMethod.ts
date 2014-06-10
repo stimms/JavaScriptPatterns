@@ -12,8 +12,8 @@ module Westros.Religion
 
   class GodFactory{
     static Build(godName: string):God{
-      if(godName === "watery")
-        return new WateryGod();
+      if(godName === "drowned")
+        return new DrownedGod();
       if(godName === "ancient")
         return new AncientGods();
       return new DefaultGod();
@@ -25,7 +25,7 @@ module Westros.Religion
     prayTo():void;
   }
 
-  export class WateryGod implements God{
+  export class DrownedGod implements God{
     public prayTo(){
 
     }
