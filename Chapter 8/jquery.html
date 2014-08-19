@@ -1,0 +1,15 @@
+<html>
+<body>
+
+</body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+
+  //yeller jquery plugin
+  $.fn.yeller = function(){
+    this.each(function(_, item){
+      $(item).val($(item).val().toUpperCase());
+    });
+  };
+</script>
+</html>
