@@ -17,10 +17,10 @@ var Westeros;
     })();
     Westeros.TournamentBuilder = TournamentBuilder;
 
-    var LanisterTournamentBuilder = (function () {
-        function LanisterTournamentBuilder() {
+    var LannisterTournamentBuilder = (function () {
+        function LannisterTournamentBuilder() {
         }
-        LanisterTournamentBuilder.prototype.build = function () {
+        LannisterTournamentBuilder.prototype.build = function () {
             var tournament = new Tournament();
             tournament.events.push(new Event("Joust"));
             tournament.events.push(new Event("Melee"));
@@ -32,9 +32,9 @@ var Westeros;
 
             return tournament;
         };
-        return LanisterTournamentBuilder;
+        return LannisterTournamentBuilder;
     })();
-    Westeros.LanisterTournamentBuilder = LanisterTournamentBuilder;
+    Westeros.LannisterTournamentBuilder = LannisterTournamentBuilder;
 
     var BaratheonTournamentBuilder = (function () {
         function BaratheonTournamentBuilder() {

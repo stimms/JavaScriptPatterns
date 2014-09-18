@@ -17,7 +17,7 @@ module Westeros
     }
   }
 
-  export class LanisterTournamentBuilder{
+  export class LannisterTournamentBuilder{
     public build(){
 
       var tournament = new Tournament();
