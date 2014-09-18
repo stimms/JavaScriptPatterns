@@ -6,6 +6,7 @@ var Westeros;
                 function KingJoffery() {
                 }
                 KingJoffery.prototype.makeDecision = function () {
+                    console.log("Decision made by King Joffery");
                 };
                 KingJoffery.prototype.marry = function () {
                 };
@@ -17,6 +18,7 @@ var Westeros;
                 function LordTywin() {
                 }
                 LordTywin.prototype.makeDecision = function () {
+                    console.log("Decision made by Lord Tywin");
                 };
                 return LordTywin;
             })();
@@ -48,6 +50,7 @@ var Westeros;
                 function KingAerys() {
                 }
                 KingAerys.prototype.makeDecision = function () {
+                    console.log("Decision made by King Aerys");
                 };
                 KingAerys.prototype.marry = function () {
                 };
@@ -59,6 +62,7 @@ var Westeros;
                 function LordConnington() {
                 }
                 LordConnington.prototype.makeDecision = function () {
+                    console.log("Decision made by Lord Connington");
                 };
                 return LordConnington;
             })();
@@ -81,3 +85,32 @@ var Westeros;
     })(Westeros.Ruling || (Westeros.Ruling = {}));
     var Ruling = Westeros.Ruling;
 })(Westeros || (Westeros = {}));
+
+var Westeros;
+(function (Westeros) {
+    (function (Ruling) {
+        var CourtSession = (function () {
+            function CourtSession(abstractFactory) {
+                this.abstractFactory = abstractFactory;
+                this.COMPLAINT_THRESHOLD = 10;
+            }
+            CourtSession.prototype.complaintPresented = function (complaint) {
+                if (complaint.severity < this.COMPLAINT_THRESHOLD) {
+                    this.abstractFactory.getHandOfTheKing().makeDecision();
+                } else
+                    this.abstractFactory.getKing().makeDecision();
+            };
+            return CourtSession;
+        })();
+        Ruling.CourtSession = CourtSession;
+    })(Westeros.Ruling || (Westeros.Ruling = {}));
+    var Ruling = Westeros.Ruling;
+})(Westeros || (Westeros = {}));
+
+var courtSession1 = new Westeros.Ruling.CourtSession(new Westeros.Ruling.Targaryen.TargaryenFactory());
+courtSession1.complaintPresented({ severity: 8 });
+courtSession1.complaintPresented({ severity: 12 });
+
+var courtSession2 = new Westeros.Ruling.CourtSession(new Westeros.Ruling.Lannister.LannisterFactory());
+courtSession2.complaintPresented({ severity: 8 });
+courtSession2.complaintPresented({ severity: 12 });
