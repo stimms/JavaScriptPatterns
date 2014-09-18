@@ -1,9 +1,10 @@
 module Login{
   export class CreateUserv1Message implements IMessage{
-      constructor(public UserName: string, public FirstName: string, public LastName: string, public EMail: string){
-        this.__messageName = "CreateUserv1Message";
-      }
       __messageName: string
+      UserName: string;
+      FirstName: string;
+      LastName: string;
+      EMail: string;
   }
 
   export class CreateUserv2Message implements IMessage{
