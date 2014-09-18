@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (FoodSuppliers) {
         var Bakery = (function () {
             function Bakery() {
@@ -39,11 +39,11 @@ var Westros;
             return Bread;
         })();
         FoodSuppliers.Bread = Bread;
-    })(Westros.FoodSuppliers || (Westros.FoodSuppliers = {}));
-    var FoodSuppliers = Westros.FoodSuppliers;
-})(Westros || (Westros = {}));
+    })(Westeros.FoodSuppliers || (Westeros.FoodSuppliers = {}));
+    var FoodSuppliers = Westeros.FoodSuppliers;
+})(Westeros || (Westeros = {}));
 
-var bakery = new Westros.FoodSuppliers.Bakery();
+var bakery = new Westeros.FoodSuppliers.Bakery();
 bakery.orderBreadType("Brioche");
 bakery.orderBreadType("Anadama bread");
 bakery.orderBreadType("Chapati");

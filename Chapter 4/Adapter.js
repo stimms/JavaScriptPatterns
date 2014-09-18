@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Transportation) {
         var SailConfiguration = (function () {
             function SailConfiguration() {
@@ -47,6 +47,6 @@ var Westros;
             return ShipAdapter;
         })();
         Transportation.ShipAdapter = ShipAdapter;
-    })(Westros.Transportation || (Westros.Transportation = {}));
-    var Transportation = Westros.Transportation;
-})(Westros || (Westros = {}));
+    })(Westeros.Transportation || (Westeros.Transportation = {}));
+    var Transportation = Westeros.Transportation;
+})(Westeros || (Westeros = {}));

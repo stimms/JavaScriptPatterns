@@ -1,4 +1,4 @@
-module Westros.Army
+module Westeros.Army
 {
   export class Soldier{
     public Health:number = 10;

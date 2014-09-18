@@ -1,4 +1,4 @@
-module Westros.Communication{
+module Westeros.Communication{
 
   export class Message{
     __messageDate: Date;
@@ -53,5 +53,5 @@ module Westros.Communication{
   }
 }
 
-var requestor = new Westros.Communication.CrowMailRequestor();
+var requestor = new Westeros.Communication.CrowMailRequestor();
 requestor.Request();

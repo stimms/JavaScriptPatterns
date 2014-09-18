@@ -1,4 +1,4 @@
-module Westros.Families{
+module Westeros.Families{
   export class Lannister{
     public clone():Lannister{
       var clone = new Lannister();
@@ -13,7 +13,7 @@ module Westros.Families{
   }
 }
 
-var jamie = new Westros.Families.Lannister();
+var jamie = new Westeros.Families.Lannister();
 jamie.swordSkills = 9;
 jamie.charm = 6;
 jamie.wealth = 10;

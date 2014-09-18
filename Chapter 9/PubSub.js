@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Communication) {
         var Message = (function () {
             function Message() {
@@ -103,12 +103,12 @@ var Westros;
             return TestResponder2;
         })();
         Communication.TestResponder2 = TestResponder2;
-    })(Westros.Communication || (Westros.Communication = {}));
-    var Communication = Westros.Communication;
-})(Westros || (Westros = {}));
+    })(Westeros.Communication || (Westeros.Communication = {}));
+    var Communication = Westeros.Communication;
+})(Westeros || (Westeros = {}));
 
-var bus = new Westros.Communication.CrowMailBus();
-bus.Subscribe("SquareRootFound", new Westros.Communication.TestResponder1());
-bus.Subscribe("SquareRootFound", new Westros.Communication.TestResponder2());
-var requestor = new Westros.Communication.CrowMailRequestor(bus);
+var bus = new Westeros.Communication.CrowMailBus();
+bus.Subscribe("SquareRootFound", new Westeros.Communication.TestResponder1());
+bus.Subscribe("SquareRootFound", new Westeros.Communication.TestResponder2());
+var requestor = new Westeros.Communication.CrowMailRequestor(bus);
 requestor.Request();

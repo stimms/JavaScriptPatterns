@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Army) {
         var Soldier = (function () {
             function Soldier() {
@@ -11,6 +11,6 @@ var Westros;
             return Soldier;
         })();
         Army.Soldier = Soldier;
-    })(Westros.Army || (Westros.Army = {}));
-    var Army = Westros.Army;
-})(Westros || (Westros = {}));
+    })(Westeros.Army || (Westeros.Army = {}));
+    var Army = Westeros.Army;
+})(Westeros || (Westeros = {}));

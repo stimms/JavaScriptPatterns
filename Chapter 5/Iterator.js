@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Succession) {
         var KingSuccession = (function () {
             function KingSuccession(inLineForThrone) {
@@ -27,6 +27,6 @@ var Westros;
             return FibonacciIterator;
         })();
         Succession.FibonacciIterator = FibonacciIterator;
-    })(Westros.Succession || (Westros.Succession = {}));
-    var Succession = Westros.Succession;
-})(Westros || (Westros = {}));
+    })(Westeros.Succession || (Westeros.Succession = {}));
+    var Succession = Westeros.Succession;
+})(Westeros || (Westeros = {}));

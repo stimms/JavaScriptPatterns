@@ -1,4 +1,4 @@
-module Westros.Tourism {
+module Westeros.Tourism {
     export class HamiltonianTour{
     	constructor(public options: HamiltonianTourOptions) {
         }
@@ -30,7 +30,7 @@ module Westros.Tourism {
     }
 }
 
-var options = new Westros.Tourism.HamiltonianTourOptions();
+var options = new Westeros.Tourism.HamiltonianTourOptions();
 options.onTourStart = function() { console.log("I love touring!");};
-var tour = new Westros.Tourism.HamiltonianTour(options);
+var tour = new Westeros.Tourism.HamiltonianTour(options);
 tour.StartTour();

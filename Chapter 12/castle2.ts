@@ -1,4 +1,4 @@
-module Westros.Buildings{
+module Westeros.Buildings{
   export class BaseStructure{
     constructor() {
         console.log("Structure built");

@@ -1,4 +1,4 @@
-module Westros.Food{
+module Westeros.Food{
 
 	export class BasicBeer{
 		public Create(){

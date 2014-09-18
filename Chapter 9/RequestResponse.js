@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Communication) {
         var Message = (function () {
             function Message() {
@@ -68,9 +68,9 @@ var Westros;
             return CrowMailBus;
         })();
         Communication.CrowMailBus = CrowMailBus;
-    })(Westros.Communication || (Westros.Communication = {}));
-    var Communication = Westros.Communication;
-})(Westros || (Westros = {}));
+    })(Westeros.Communication || (Westeros.Communication = {}));
+    var Communication = Westeros.Communication;
+})(Westeros || (Westeros = {}));
 
-var requestor = new Westros.Communication.CrowMailRequestor();
+var requestor = new Westeros.Communication.CrowMailRequestor();
 requestor.Request();

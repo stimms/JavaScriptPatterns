@@ -1,4 +1,4 @@
-module Westros.Measurement{
+module Westeros.Measurement{
   export interface IBarrelCalculator{
     calculateNumberNeeded(volume: number);
   }

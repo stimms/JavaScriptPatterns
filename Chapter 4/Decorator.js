@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Armor) {
         var BasicArmor = (function () {
             function BasicArmor() {
@@ -35,6 +35,6 @@ var Westros;
             return Hit;
         })();
         Armor.Hit = Hit;
-    })(Westros.Armor || (Westros.Armor = {}));
-    var Armor = Westros.Armor;
-})(Westros || (Westros = {}));
+    })(Westeros.Armor || (Westeros.Armor = {}));
+    var Armor = Westeros.Armor;
+})(Westeros || (Westeros = {}));

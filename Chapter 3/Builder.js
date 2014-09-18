@@ -1,11 +1,11 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     var Tournament = (function () {
         function Tournament() {
         }
         return Tournament;
     })();
-    Westros.Tournament = Tournament;
+    Westeros.Tournament = Tournament;
 
     var TournamentBuilder = (function () {
         function TournamentBuilder() {
@@ -15,7 +15,7 @@ var Westros;
         };
         return TournamentBuilder;
     })();
-    Westros.TournamentBuilder = TournamentBuilder;
+    Westeros.TournamentBuilder = TournamentBuilder;
 
     var LanisterTournamentBuilder = (function () {
         function LanisterTournamentBuilder() {
@@ -34,7 +34,7 @@ var Westros;
         };
         return LanisterTournamentBuilder;
     })();
-    Westros.LanisterTournamentBuilder = LanisterTournamentBuilder;
+    Westeros.LanisterTournamentBuilder = LanisterTournamentBuilder;
 
     var BaratheonTournamentBuilder = (function () {
         function BaratheonTournamentBuilder() {
@@ -51,7 +51,7 @@ var Westros;
         };
         return BaratheonTournamentBuilder;
     })();
-    Westros.BaratheonTournamentBuilder = BaratheonTournamentBuilder;
+    Westeros.BaratheonTournamentBuilder = BaratheonTournamentBuilder;
 
     var Event = (function () {
         function Event(name) {
@@ -59,7 +59,7 @@ var Westros;
         }
         return Event;
     })();
-    Westros.Event = Event;
+    Westeros.Event = Event;
 
     var Prize = (function () {
         function Prize(name) {
@@ -67,7 +67,7 @@ var Westros;
         }
         return Prize;
     })();
-    Westros.Prize = Prize;
+    Westeros.Prize = Prize;
 
     var Attendee = (function () {
         function Attendee(name) {
@@ -75,5 +75,5 @@ var Westros;
         }
         return Attendee;
     })();
-    Westros.Attendee = Attendee;
-})(Westros || (Westros = {}));
+    Westeros.Attendee = Attendee;
+})(Westeros || (Westeros = {}));

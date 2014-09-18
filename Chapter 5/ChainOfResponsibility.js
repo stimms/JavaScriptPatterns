@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (JudicialSystem) {
         var Complaint = (function () {
             function Complaint() {
@@ -60,6 +60,6 @@ var Westros;
             return ComplaintResolver;
         })();
         JudicialSystem.ComplaintResolver = ComplaintResolver;
-    })(Westros.JudicialSystem || (Westros.JudicialSystem = {}));
-    var JudicialSystem = Westros.JudicialSystem;
-})(Westros || (Westros = {}));
+    })(Westeros.JudicialSystem || (Westeros.JudicialSystem = {}));
+    var JudicialSystem = Westeros.JudicialSystem;
+})(Westeros || (Westeros = {}));

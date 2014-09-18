@@ -1,16 +1,16 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     var Ruler = (function () {
         function Ruler() {
-            this.house = new Westros.Houses.Targaryen();
+            this.house = new Westeros.Houses.Targaryen();
         }
         return Ruler;
     })();
-    Westros.Ruler = Ruler;
-})(Westros || (Westros = {}));
+    Westeros.Ruler = Ruler;
+})(Westeros || (Westeros = {}));
 
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Houses) {
         var Targaryen = (function () {
             function Targaryen() {
@@ -18,6 +18,6 @@ var Westros;
             return Targaryen;
         })();
         Houses.Targaryen = Targaryen;
-    })(Westros.Houses || (Westros.Houses = {}));
-    var Houses = Westros.Houses;
-})(Westros || (Westros = {}));
+    })(Westeros.Houses || (Westeros.Houses = {}));
+    var Houses = Westeros.Houses;
+})(Westeros || (Westeros = {}));

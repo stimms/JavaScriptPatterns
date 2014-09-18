@@ -1,4 +1,4 @@
-module Westros.Taxation{
+module Westeros.Taxation{
 
 	export class TaxCollector{
 		public collect(items, value, projection)
@@ -11,7 +11,7 @@ module Westros.Taxation{
 }
 
 var peasants = [{name: "Jory Cassel", moneyOwed: 11, bankBalance: 50},{name: "Vardis Egen", moneyOwed: 15, bankBalance: 20}];
-var collector = new Westros.Taxation.TaxCollector();
+var collector = new Westeros.Taxation.TaxCollector();
 console.log(collector.collect(peasants, 0, (item) => Math.min(item.moneyOwed, item.bankBalance)));
 
 var multiArray :any[][]= [[1,2,3], ["a", "b", "c"]];

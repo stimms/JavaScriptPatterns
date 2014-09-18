@@ -1,4 +1,4 @@
-module  Westros.Mathmatics {
+module  Westeros.Mathmatics {
     export class Fibonacci{
     	public NaieveFib(n): number {
     		if(n== 0)
@@ -21,6 +21,6 @@ module  Westros.Mathmatics {
     }
 }
 
-var fib = new Westros.Mathmatics.Fibonacci();
+var fib = new Westeros.Mathmatics.Fibonacci();
 
 console.log(fib.MemetoFib(50));

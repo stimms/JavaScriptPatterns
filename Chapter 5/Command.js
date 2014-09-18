@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Communication) {
         var simpleCommand = new Array();
         simpleCommand.push(new LordInstructions().BringTroops);
@@ -32,6 +32,6 @@ var Westros;
             return LordInstructions;
         })();
         Communication.LordInstructions = LordInstructions;
-    })(Westros.Communication || (Westros.Communication = {}));
-    var Communication = Westros.Communication;
-})(Westros || (Westros = {}));
+    })(Westeros.Communication || (Westeros.Communication = {}));
+    var Communication = Westeros.Communication;
+})(Westeros || (Westeros = {}));

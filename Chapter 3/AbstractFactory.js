@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Ruling) {
         (function (Lannister) {
             var KingJoffery = (function () {
@@ -36,12 +36,12 @@ var Westros;
             Lannister.LannisterFactory = LannisterFactory;
         })(Ruling.Lannister || (Ruling.Lannister = {}));
         var Lannister = Ruling.Lannister;
-    })(Westros.Ruling || (Westros.Ruling = {}));
-    var Ruling = Westros.Ruling;
-})(Westros || (Westros = {}));
+    })(Westeros.Ruling || (Westeros.Ruling = {}));
+    var Ruling = Westeros.Ruling;
+})(Westeros || (Westeros = {}));
 
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Ruling) {
         (function (Targaryen) {
             var KingAerys = (function () {
@@ -78,6 +78,6 @@ var Westros;
             Targaryen.TargaryenFactory = TargaryenFactory;
         })(Ruling.Targaryen || (Ruling.Targaryen = {}));
         var Targaryen = Ruling.Targaryen;
-    })(Westros.Ruling || (Westros.Ruling = {}));
-    var Ruling = Westros.Ruling;
-})(Westros || (Westros = {}));
+    })(Westeros.Ruling || (Westeros.Ruling = {}));
+    var Ruling = Westeros.Ruling;
+})(Westeros || (Westeros = {}));

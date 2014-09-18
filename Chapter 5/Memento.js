@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Foretelling) {
         var SquareCommand = (function () {
             function SquareCommand(numberToSquare) {
@@ -65,6 +65,6 @@ var Westros;
             return WorldStateProvider;
         })();
         Foretelling.WorldStateProvider = WorldStateProvider;
-    })(Westros.Foretelling || (Westros.Foretelling = {}));
-    var Foretelling = Westros.Foretelling;
-})(Westros || (Westros = {}));
+    })(Westeros.Foretelling || (Westeros.Foretelling = {}));
+    var Foretelling = Westeros.Foretelling;
+})(Westeros || (Westeros = {}));

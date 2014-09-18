@@ -1,4 +1,4 @@
-module Westros.Food{
+module Westeros.Food{
   export interface IIngredient{
     GetName(): string;
     GetCalories():number;

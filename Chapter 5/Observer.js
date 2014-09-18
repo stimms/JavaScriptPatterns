@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Court) {
         var GetterSetter = (function () {
             function GetterSetter() {
@@ -53,6 +53,6 @@ var Westros;
             };
             return Player;
         })();
-    })(Westros.Court || (Westros.Court = {}));
-    var Court = Westros.Court;
-})(Westros || (Westros = {}));
+    })(Westeros.Court || (Westeros.Court = {}));
+    var Court = Westeros.Court;
+})(Westeros || (Westeros = {}));

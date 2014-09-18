@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Alliances) {
         var HouseStark = (function () {
             function HouseStark() {
@@ -65,6 +65,6 @@ var Westros;
             return Umber;
         })();
         Alliances.Umber = Umber;
-    })(Westros.Alliances || (Westros.Alliances = {}));
-    var Alliances = Westros.Alliances;
-})(Westros || (Westros = {}));
+    })(Westeros.Alliances || (Westeros.Alliances = {}));
+    var Alliances = Westeros.Alliances;
+})(Westeros || (Westeros = {}));

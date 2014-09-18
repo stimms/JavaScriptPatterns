@@ -4,8 +4,8 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Food) {
         var BasicBeer = (function () {
             function BasicBeer() {
@@ -62,6 +62,6 @@ var Westros;
             return RaspberryBeer;
         })(BasicBeer);
         Food.RaspberryBeer = RaspberryBeer;
-    })(Westros.Food || (Westros.Food = {}));
-    var Food = Westros.Food;
-})(Westros || (Westros = {}));
+    })(Westeros.Food || (Westeros.Food = {}));
+    var Food = Westeros.Food;
+})(Westeros || (Westeros = {}));

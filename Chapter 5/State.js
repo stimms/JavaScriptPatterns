@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Banking) {
         var NaiveBanking = (function () {
             function NaiveBanking() {
@@ -97,6 +97,6 @@ var Westros;
             return OnHold;
         })();
         Banking.OnHold = OnHold;
-    })(Westros.Banking || (Westros.Banking = {}));
-    var Banking = Westros.Banking;
-})(Westros || (Westros = {}));
+    })(Westeros.Banking || (Westeros.Banking = {}));
+    var Banking = Westeros.Banking;
+})(Westeros || (Westeros = {}));

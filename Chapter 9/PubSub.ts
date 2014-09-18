@@ -1,6 +1,6 @@
 declare var process: any;
 
-module Westros.Communication{
+module Westeros.Communication{
 
   export class Message{
     __messageDate: Date;
@@ -92,8 +92,8 @@ module Westros.Communication{
   }
 }
 
-var bus = new Westros.Communication.CrowMailBus();
-bus.Subscribe("SquareRootFound", new Westros.Communication.TestResponder1());
-bus.Subscribe("SquareRootFound", new Westros.Communication.TestResponder2());
-var requestor = new Westros.Communication.CrowMailRequestor(bus);
+var bus = new Westeros.Communication.CrowMailBus();
+bus.Subscribe("SquareRootFound", new Westeros.Communication.TestResponder1());
+bus.Subscribe("SquareRootFound", new Westeros.Communication.TestResponder2());
+var requestor = new Westeros.Communication.CrowMailRequestor(bus);
 requestor.Request();

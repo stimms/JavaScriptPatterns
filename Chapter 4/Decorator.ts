@@ -1,4 +1,4 @@
-module Westros.Armor{
+module Westeros.Armor{
   export interface IArmor{
     CalculateDamageFromHit(hit: Hit):number;
     GetArmorIntegrity():number;

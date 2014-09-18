@@ -4,8 +4,8 @@ var __extends = this.__extends || function (d, b) {
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Buildings) {
         var BaseStructure = (function () {
             function BaseStructure() {
@@ -27,6 +27,6 @@ var Westros;
             return Castle;
         })(BaseStructure);
         Buildings.Castle = Castle;
-    })(Westros.Buildings || (Westros.Buildings = {}));
-    var Buildings = Westros.Buildings;
-})(Westros || (Westros = {}));
+    })(Westeros.Buildings || (Westeros.Buildings = {}));
+    var Buildings = Westeros.Buildings;
+})(Westeros || (Westeros = {}));

@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Measurement) {
         var BarrelCalculator = (function () {
             function BarrelCalculator() {
@@ -22,6 +22,6 @@ var Westros;
             return DragonBarrelCalculator;
         })();
         Measurement.DragonBarrelCalculator = DragonBarrelCalculator;
-    })(Westros.Measurement || (Westros.Measurement = {}));
-    var Measurement = Westros.Measurement;
-})(Westros || (Westros = {}));
+    })(Westeros.Measurement || (Westeros.Measurement = {}));
+    var Measurement = Westeros.Measurement;
+})(Westeros || (Westeros = {}));

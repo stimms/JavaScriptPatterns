@@ -1,4 +1,4 @@
-module Westros.Communication{
+module Westeros.Communication{
   var simpleCommand = new Array();
   simpleCommand.push(new LordInstructions().BringTroops);
   simpleCommand.push("King's Landing");

@@ -1,4 +1,4 @@
-module Westros.Army{
+module Westeros.Army{
 
 	export interface IMemberOfArmy{
 		visit(visitor: IVisitor);
@@ -7,7 +7,7 @@ module Westros.Army{
 	}
 
 	export class Knight implements IMemberOfArmy{
-		_type = "Westros.Army.Knight";
+		_type = "Westeros.Army.Knight";
 		printName()
 		{
 			console.log("Knight");
@@ -18,7 +18,7 @@ module Westros.Army{
 		}
 	}
 	export class FootSoldier implements IMemberOfArmy{
-		_type = "Westros.Army.FootSoldier";
+		_type = "Westeros.Army.FootSoldier";
 		printName()
 		{
 			console.log("FootSoldier");
@@ -29,7 +29,7 @@ module Westros.Army{
 		}
 	}
 	export class Archer implements IMemberOfArmy{
-		_type = "Westros.Army.Archer";
+		_type = "Westeros.Army.Archer";
 		printName()
 		{
 			console.log("Archer");
@@ -40,7 +40,7 @@ module Westros.Army{
 		}
 	}
 	export class Lord implements IMemberOfArmy{
-		_type = "Westros.Army.Lord";
+		_type = "Westeros.Army.Lord";
 		printName()
 		{
 			console.log("Lord");
@@ -62,7 +62,7 @@ module Westros.Army{
 
 			for(var i = 0; i< collection.length; i++)
 			{
-				if(collection[i]._type == 'Westros.Army.Knight')
+				if(collection[i]._type == 'Westeros.Army.Knight')
 					collection[i].printName();
 				else 
 					console.log("No match");
@@ -92,7 +92,7 @@ module Westros.Army{
 	class SelectiveNamePrinterVisitor implements IVisitor{
 		public visit(memberOfArmy: IMemberOfArmy)
 		{
-			if(memberOfArmy._type == "Westros.Army.Knight")
+			if(memberOfArmy._type == "Westeros.Army.Knight")
 			{
 				this.VisitKnight(memberOfArmy);
 			}
@@ -108,5 +108,5 @@ module Westros.Army{
 	}
 }
 
-var b = new Westros.Army.VisitorExample();
+var b = new Westeros.Army.VisitorExample();
 b.Execute();

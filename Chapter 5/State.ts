@@ -1,4 +1,4 @@
-module Westros.Banking{
+module Westeros.Banking{
 	class NaiveBanking{
 		state = "";
 		balance = 0;

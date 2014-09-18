@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Families) {
         var Lannister = (function () {
             function Lannister() {
@@ -14,11 +14,11 @@ var Westros;
             return Lannister;
         })();
         Families.Lannister = Lannister;
-    })(Westros.Families || (Westros.Families = {}));
-    var Families = Westros.Families;
-})(Westros || (Westros = {}));
+    })(Westeros.Families || (Westeros.Families = {}));
+    var Families = Westeros.Families;
+})(Westeros || (Westeros = {}));
 
-var jamie = new Westros.Families.Lannister();
+var jamie = new Westeros.Families.Lannister();
 jamie.swordSkills = 9;
 jamie.charm = 6;
 jamie.wealth = 10;

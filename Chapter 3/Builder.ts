@@ -1,4 +1,4 @@
-module Westros
+module Westeros
 {
   export class Tournament{
     public events:Event[];

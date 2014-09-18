@@ -1,4 +1,4 @@
-module Westros.Transportation{
+module Westeros.Transportation{
 
   export class Fleet {
     public ship: Ship[];

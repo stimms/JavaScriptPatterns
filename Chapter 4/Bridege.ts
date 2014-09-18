@@ -1,4 +1,4 @@
-module Westros.Religion
+module Westeros.Religion
 {
   export class OldGods{
       prayTo(sacrifice){}

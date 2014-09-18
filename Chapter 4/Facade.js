@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Transportation) {
         var Fleet = (function () {
             function Fleet() {
@@ -44,6 +44,6 @@ var Westros;
             return SupplyCoordinator;
         })();
         Transportation.SupplyCoordinator = SupplyCoordinator;
-    })(Westros.Transportation || (Westros.Transportation = {}));
-    var Transportation = Westros.Transportation;
-})(Westros || (Westros = {}));
+    })(Westeros.Transportation || (Westeros.Transportation = {}));
+    var Transportation = Westeros.Transportation;
+})(Westeros || (Westeros = {}));

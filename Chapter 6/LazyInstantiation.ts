@@ -1,4 +1,4 @@
-module Westros.FoodSuppliers{
+module Westeros.FoodSuppliers{
 
 	export class Bakery{
 		breads: Bread[];
@@ -40,7 +40,7 @@ module Westros.FoodSuppliers{
 	}
 }
 
-var bakery = new Westros.FoodSuppliers.Bakery();
+var bakery = new Westeros.FoodSuppliers.Bakery();
 bakery.orderBreadType("Brioche");
 bakery.orderBreadType("Anadama bread");
 bakery.orderBreadType("Chapati");

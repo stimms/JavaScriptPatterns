@@ -1,9 +1,9 @@
-module Westros{
+module Westeros{
   export class Ruler{
-    house = new Westros.Houses.Targaryen();
+    house = new Westeros.Houses.Targaryen();
   }
 }
 
-module Westros.Houses{
+module Westeros.Houses{
   export class Targaryen{}
 }

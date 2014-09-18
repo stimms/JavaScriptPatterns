@@ -1,4 +1,4 @@
-module Westros.Foretelling{
+module Westeros.Foretelling{
 
 	export class SquareCommand{
 		constructor(public numberToSquare){}

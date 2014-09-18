@@ -1,4 +1,4 @@
-module Westros.JudicialSystem{
+module Westeros.JudicialSystem{
 
   export class Complaint{
     public ComplainingParty: string= "";

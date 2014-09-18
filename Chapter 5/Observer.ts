@@ -1,4 +1,4 @@
-module Westros.Court{
+module Westeros.Court{
   class GetterSetter{
     _listener : Listener;
     _property;

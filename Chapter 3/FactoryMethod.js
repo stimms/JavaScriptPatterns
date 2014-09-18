@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Religion) {
         var Prayer = (function () {
             function Prayer() {
@@ -58,6 +58,6 @@ var Westros;
             return DefaultGod;
         })();
         Religion.DefaultGod = DefaultGod;
-    })(Westros.Religion || (Westros.Religion = {}));
-    var Religion = Westros.Religion;
-})(Westros || (Westros = {}));
+    })(Westeros.Religion || (Westeros.Religion = {}));
+    var Religion = Westeros.Religion;
+})(Westeros || (Westeros = {}));

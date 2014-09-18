@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Taxation) {
         var TaxCollector = (function () {
             function TaxCollector() {
@@ -12,12 +12,12 @@ var Westros;
             return TaxCollector;
         })();
         Taxation.TaxCollector = TaxCollector;
-    })(Westros.Taxation || (Westros.Taxation = {}));
-    var Taxation = Westros.Taxation;
-})(Westros || (Westros = {}));
+    })(Westeros.Taxation || (Westeros.Taxation = {}));
+    var Taxation = Westeros.Taxation;
+})(Westeros || (Westeros = {}));
 
 var peasants = [{ name: "Jory Cassel", moneyOwed: 11, bankBalance: 50 }, { name: "Vardis Egen", moneyOwed: 15, bankBalance: 20 }];
-var collector = new Westros.Taxation.TaxCollector();
+var collector = new Westeros.Taxation.TaxCollector();
 console.log(collector.collect(peasants, 0, function (item) {
     return Math.min(item.moneyOwed, item.bankBalance);
 }));

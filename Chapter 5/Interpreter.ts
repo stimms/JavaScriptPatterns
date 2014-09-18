@@ -1,4 +1,4 @@
-module Westros.History{
+module Westeros.History{
   export class Battle{
     constructor(public battleGround : string, public agressor: string, public defender: string, public victor: string){
 

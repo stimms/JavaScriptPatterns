@@ -1,4 +1,4 @@
-module Westros.Alliances{
+module Westeros.Alliances{
 	
 	export class HouseStark{
 		karstark: Karstark;

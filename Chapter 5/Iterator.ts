@@ -1,4 +1,4 @@
-module Westros.Succession{
+module Westeros.Succession{
   export interface Iterator{
     next();
   }

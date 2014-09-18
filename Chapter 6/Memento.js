@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Mathmatics) {
         var Fibonacci = (function () {
             function Fibonacci() {
@@ -25,11 +25,11 @@ var Westros;
             return Fibonacci;
         })();
         Mathmatics.Fibonacci = Fibonacci;
-    })(Westros.Mathmatics || (Westros.Mathmatics = {}));
-    var Mathmatics = Westros.Mathmatics;
-})(Westros || (Westros = {}));
+    })(Westeros.Mathmatics || (Westeros.Mathmatics = {}));
+    var Mathmatics = Westeros.Mathmatics;
+})(Westeros || (Westeros = {}));
 
-var fib = new Westros.Mathmatics.Fibonacci();
+var fib = new Westeros.Mathmatics.Fibonacci();
 
 start = new Date();
 console.log(fib.NaieveFib(140));

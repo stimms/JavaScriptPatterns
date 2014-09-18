@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Travel) {
         var TravelResult = (function () {
             function TravelResult(durationInDays, probabilityOfDeath, cost) {
@@ -40,15 +40,15 @@ var Westros;
             return Walk;
         })();
         Travel.Walk = Walk;
-    })(Westros.Travel || (Westros.Travel = {}));
-    var Travel = Westros.Travel;
-})(Westros || (Westros = {}));
+    })(Westeros.Travel || (Westeros.Travel = {}));
+    var Travel = Westeros.Travel;
+})(Westeros || (Westeros = {}));
 
 var currentMoney = 70;
 var strat;
 if (currentMoney > 500)
-    strat = new Westros.Travel.SeaGoingVessel();
+    strat = new Westeros.Travel.SeaGoingVessel();
 else if (currentMoney > 50)
-    strat = new Westros.Travel.Horse();
+    strat = new Westeros.Travel.Horse();
 else
-    strat = new Westros.Travel.Walk();
+    strat = new Westeros.Travel.Walk();

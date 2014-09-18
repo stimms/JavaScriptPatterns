@@ -1,8 +1,8 @@
 HTMLElement.prototype.getElementById = function () {
 };
 
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Meta) {
         (function (CastleDesign) {
             var CreateCastleModel = (function () {
@@ -128,6 +128,6 @@ var Westros;
             CastleDesign.CreateCastlePresenter = CreateCastlePresenter;
         })(Meta.CastleDesign || (Meta.CastleDesign = {}));
         var CastleDesign = Meta.CastleDesign;
-    })(Westros.Meta || (Westros.Meta = {}));
-    var Meta = Westros.Meta;
-})(Westros || (Westros = {}));
+    })(Westeros.Meta || (Westeros.Meta = {}));
+    var Meta = Westeros.Meta;
+})(Westeros || (Westeros = {}));

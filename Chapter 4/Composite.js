@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Food) {
         var SimpleIngredient = (function () {
             function SimpleIngredient(name, calories, ironContent, vitaminCContent) {
@@ -60,6 +60,6 @@ var Westros;
             return CompoundIngredient;
         })();
         Food.CompoundIngredient = CompoundIngredient;
-    })(Westros.Food || (Westros.Food = {}));
-    var Food = Westros.Food;
-})(Westros || (Westros = {}));
+    })(Westeros.Food || (Westeros.Food = {}));
+    var Food = Westeros.Food;
+})(Westeros || (Westeros = {}));

@@ -1,9 +1,9 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Army) {
         var Knight = (function () {
             function Knight() {
-                this._type = "Westros.Army.Knight";
+                this._type = "Westeros.Army.Knight";
             }
             Knight.prototype.printName = function () {
                 console.log("Knight");
@@ -16,7 +16,7 @@ var Westros;
         Army.Knight = Knight;
         var FootSoldier = (function () {
             function FootSoldier() {
-                this._type = "Westros.Army.FootSoldier";
+                this._type = "Westeros.Army.FootSoldier";
             }
             FootSoldier.prototype.printName = function () {
                 console.log("FootSoldier");
@@ -29,7 +29,7 @@ var Westros;
         Army.FootSoldier = FootSoldier;
         var Archer = (function () {
             function Archer() {
-                this._type = "Westros.Army.Archer";
+                this._type = "Westeros.Army.Archer";
             }
             Archer.prototype.printName = function () {
                 console.log("Archer");
@@ -42,7 +42,7 @@ var Westros;
         Army.Archer = Archer;
         var Lord = (function () {
             function Lord() {
-                this._type = "Westros.Army.Lord";
+                this._type = "Westeros.Army.Lord";
             }
             Lord.prototype.printName = function () {
                 console.log("Lord");
@@ -65,7 +65,7 @@ var Westros;
                 collection.push(new Archer());
 
                 for (var i = 0; i < collection.length; i++) {
-                    if (collection[i]._type == 'Westros.Army.Knight')
+                    if (collection[i]._type == 'Westeros.Army.Knight')
                         collection[i].printName();
                     else
                         console.log("No match");
@@ -97,7 +97,7 @@ var Westros;
             function SelectiveNamePrinterVisitor() {
             }
             SelectiveNamePrinterVisitor.prototype.visit = function (memberOfArmy) {
-                if (memberOfArmy._type == "Westros.Army.Knight") {
+                if (memberOfArmy._type == "Westeros.Army.Knight") {
                     this.VisitKnight(memberOfArmy);
                 } else {
                     console.log("Not a knight");
@@ -109,9 +109,9 @@ var Westros;
             };
             return SelectiveNamePrinterVisitor;
         })();
-    })(Westros.Army || (Westros.Army = {}));
-    var Army = Westros.Army;
-})(Westros || (Westros = {}));
+    })(Westeros.Army || (Westeros.Army = {}));
+    var Army = Westeros.Army;
+})(Westeros || (Westeros = {}));
 
-var b = new Westros.Army.VisitorExample();
+var b = new Westeros.Army.VisitorExample();
 b.Execute();

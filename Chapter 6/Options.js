@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (Tourism) {
         var HamiltonianTour = (function () {
             function HamiltonianTour(options) {
@@ -34,13 +34,13 @@ var Westros;
             return HamiltonianTourOptions;
         })();
         Tourism.HamiltonianTourOptions = HamiltonianTourOptions;
-    })(Westros.Tourism || (Westros.Tourism = {}));
-    var Tourism = Westros.Tourism;
-})(Westros || (Westros = {}));
+    })(Westeros.Tourism || (Westeros.Tourism = {}));
+    var Tourism = Westeros.Tourism;
+})(Westeros || (Westeros = {}));
 
-var options = new Westros.Tourism.HamiltonianTourOptions();
+var options = new Westeros.Tourism.HamiltonianTourOptions();
 options.onTourStart = function () {
     console.log("I love touring!");
 };
-var tour = new Westros.Tourism.HamiltonianTour(options);
+var tour = new Westeros.Tourism.HamiltonianTour(options);
 tour.StartTour();

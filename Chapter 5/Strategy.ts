@@ -1,4 +1,4 @@
-module Westros.Travel{
+module Westeros.Travel{
 	export interface ITravelMethod{
 		Travel(source: string, destination: string) : TravelResult;
 	}
@@ -31,8 +31,8 @@ module Westros.Travel{
 var currentMoney = 70;
 var strat;
 if(currentMoney > 500)
-	strat = new Westros.Travel.SeaGoingVessel();
+	strat = new Westeros.Travel.SeaGoingVessel();
 else if(currentMoney>50)
-	strat = new Westros.Travel.Horse();
+	strat = new Westeros.Travel.Horse();
 else
-	strat = new Westros.Travel.Walk();
+	strat = new Westeros.Travel.Walk();

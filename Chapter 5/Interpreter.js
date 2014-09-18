@@ -1,5 +1,5 @@
-var Westros;
-(function (Westros) {
+var Westeros;
+(function (Westeros) {
     (function (History) {
         var Battle = (function () {
             function Battle(battleGround, agressor, defender, victor) {
@@ -27,6 +27,6 @@ var Westros;
             return Parser;
         })();
         History.Parser = Parser;
-    })(Westros.History || (Westros.History = {}));
-    var History = Westros.History;
-})(Westros || (Westros = {}));
+    })(Westeros.History || (Westeros.History = {}));
+    var History = Westeros.History;
+})(Westeros || (Westeros = {}));

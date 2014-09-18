@@ -1,6 +1,6 @@
 	HTMLElement.prototype.getElementById = function(){}
 
-module Westros.Meta.CastleDesign{
+module Westeros.Meta.CastleDesign{
 	export class CreateCastleModel{
 		constructor(public name?, public description?, public outerWallThickness?, public numberOfTowers?, public moat?){}
 

@@ -1,4 +1,4 @@
-module Westros
+module Westeros
 {
   export class Wall{
 
@@ -28,9 +28,9 @@ module Westros
   }
 }
 
-var wall = Westros.Wall.getInstance();
+var wall = Westeros.Wall.getInstance();
 wall.setHeight(10);
-var wall2 = Westros.Wall.getInstance();
+var wall2 = Westeros.Wall.getInstance();
 wall2.getStatus();
-var wall3 = new Westros.Wall();
+var wall3 = new Westeros.Wall();
 wall3.getStatus();
