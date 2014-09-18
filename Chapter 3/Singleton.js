@@ -4,7 +4,7 @@ var Westeros;
         function Wall() {
             this.height = 0;
             if (Wall._instance)
-                throw new Error("This is a singleton, use getInstance to get an instance");
+                return Wall._instance;
             Wall._instance = this;
         }
         Wall.prototype.setHeight = function (height) {
@@ -33,3 +33,6 @@ var wall2 = Westeros.Wall.getInstance();
 wall2.getStatus();
 var wall3 = new Westeros.Wall();
 wall3.getStatus();
+wall3.setHeight(20);
+var wall4 = new Westeros.Wall();
+wall4.getStatus();
