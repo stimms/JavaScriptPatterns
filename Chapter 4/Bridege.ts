@@ -1,15 +1,21 @@
 module Westeros.Religion
 {
   export class OldGods{
-      prayTo(sacrifice){}
+      prayTo(sacrifice){
+        console.log("We Old Gods hear your prayer");
+      }
   }
 
   export class DrownedGod{
-    prayTo(humanSacrifice){}
+    prayTo(humanSacrifice){
+      console.log("*BUBBLE* GURGLE");
+    }
   }
 
  export class SevenGods{
-    prayTo(prayerPurpose){}
+    prayTo(prayerPurpose){
+      console.log("Sorry there are a lot of us, it gets confusing here.  Did you pray for something?");
+    }
   }
 
   export interface God
@@ -22,7 +28,7 @@ module Westeros.Religion
     constructor(){
       this._oldGods = new OldGods();
     }
-    prayTo(){
+    public prayTo(){
       var sacrifice= new Sacrifice();
       this._oldGods.prayTo(sacrifice);
     }
@@ -33,7 +39,7 @@ module Westeros.Religion
     constructor(){
       this._drownedGod = new DrownedGod();
     }
-    prayTo(){
+    public prayTo(){
       var sacrifice = new HumanSacrifice();
       this._drownedGod.prayTo(sacrifice);
     }
@@ -45,7 +51,7 @@ module Westeros.Religion
     constructor(){
       this._sevenGods = new SevenGods();
     }
-    prayTo(){
+    public prayTo(){
       this._sevenGods.prayTo(this.prayerPurposeProvider.GetPurpose());
     }
 
@@ -57,4 +63,13 @@ module Westeros.Religion
   export class Sacrifice{}
 export class HumanSacrifice{}
 
+}
+
+var god1 = new Westeros.Religion.SevenGodsAdapter();
+var god2 = new Westeros.Religion.DrownedGodAdapter();
+var god3 = new Westeros.Religion.OldGodsAdapter();
+
+var gods : Westeros.Religion.God[] = [god1, god2, god3];
+for(var i =0; i<gods.length; i++){
+  gods[i].prayTo();
 }
