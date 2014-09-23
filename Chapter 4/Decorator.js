@@ -5,7 +5,7 @@ var Westeros;
             function BasicArmor() {
             }
             BasicArmor.prototype.CalculateDamageFromHit = function (hit) {
-                return 1;
+                return hit.Strength * .2;
             };
             BasicArmor.prototype.GetArmorIntegrity = function () {
                 return 1;
@@ -38,3 +38,6 @@ var Westeros;
     })(Westeros.Armor || (Westeros.Armor = {}));
     var Armor = Westeros.Armor;
 })(Westeros || (Westeros = {}));
+
+var armor = new Westeros.Armor.ChainMail(new Westeros.Armor.BasicArmor());
+console.log(armor.CalculateDamageFromHit({ Location: "head", Weapon: "Sock filled with pennies", Strength: 12 }));

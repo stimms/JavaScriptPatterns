@@ -13,7 +13,7 @@ module Westeros.Transportation{
 
     }
 
-    public attach(destination: string){
+    public attack(destination: string){
       //attack a city
     }
 

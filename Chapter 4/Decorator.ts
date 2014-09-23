@@ -7,7 +7,7 @@ module Westeros.Armor{
   export class BasicArmor implements IArmor{
     CalculateDamageFromHit(hit: Hit):number
     {
-      return 1;
+      return hit.Strength * .2;
     }
     GetArmorIntegrity():number{
       return 1;
@@ -36,3 +36,6 @@ module Westeros.Armor{
     public Strength: number;
   }
 }
+
+var armor = new Westeros.Armor.ChainMail(new Westeros.Armor.BasicArmor());
+console.log(armor.CalculateDamageFromHit({Location: "head", Weapon: "Sock filled with pennies", Strength: 12}));
