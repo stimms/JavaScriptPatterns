@@ -49,3 +49,8 @@ module Westeros.Transportation
     GoForward();
   }
 }
+
+
+var ship = new Westeros.Transportation.ShipAdapter();
+ship.GoForward();
+ship.TurnLeft();

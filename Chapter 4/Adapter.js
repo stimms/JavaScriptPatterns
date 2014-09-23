@@ -50,3 +50,7 @@ var Westeros;
     })(Westeros.Transportation || (Westeros.Transportation = {}));
     var Transportation = Westeros.Transportation;
 })(Westeros || (Westeros = {}));
+
+var ship = new Westeros.Transportation.ShipAdapter();
+ship.GoForward();
+ship.TurnLeft();
