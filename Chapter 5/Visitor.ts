@@ -51,6 +51,25 @@ module Westeros.Army{
 		}
 	}
 
+	export class InstanceOfExample{
+		Execute()
+		{
+			var collection = [];
+			collection.push(new Knight());
+			collection.push(new FootSoldier());
+			collection.push(new Lord());
+			collection.push(new Archer());
+
+			for(var i = 0; i< collection.length; i++)
+			{
+				if(collection[i] instanceof Westeros.Army.Knight)
+					collection[i].printName();
+				else 
+					console.log("No match");
+			}
+		}
+	}
+
 	export class IfExample{
 		Execute()
 		{
@@ -92,7 +111,7 @@ module Westeros.Army{
 	class SelectiveNamePrinterVisitor implements IVisitor{
 		public visit(memberOfArmy: IMemberOfArmy)
 		{
-			if(memberOfArmy._type == "Westeros.Army.Knight")
+			if(memberOfArmy instanceof Westeros.Army.Knight)
 			{
 				this.VisitKnight(memberOfArmy);
 			}
@@ -108,5 +127,12 @@ module Westeros.Army{
 	}
 }
 
-var b = new Westeros.Army.VisitorExample();
+console.log("Instance of");
+var a = new Westeros.Army.InstanceOfExample();
+a.Execute();
+console.log("Type of");
+var b = new Westeros.Army.IfExample();
 b.Execute();
+console.log("Vistor example");
+var c = new Westeros.Army.VisitorExample();
+c.Execute();

@@ -54,6 +54,27 @@ var Westeros;
         })();
         Army.Lord = Lord;
 
+        var InstanceOfExample = (function () {
+            function InstanceOfExample() {
+            }
+            InstanceOfExample.prototype.Execute = function () {
+                var collection = [];
+                collection.push(Object.create(Knight));
+                collection.push(Object.create(FootSoldier));
+                collection.push(new Lord());
+                collection.push(new Archer());
+
+                for (var i = 0; i < collection.length; i++) {
+                    if (collection[i] instanceof Westeros.Army.Knight)
+                        collection[i].printName();
+                    else
+                        console.log("No match");
+                }
+            };
+            return InstanceOfExample;
+        })();
+        Army.InstanceOfExample = InstanceOfExample;
+
         var IfExample = (function () {
             function IfExample() {
             }
@@ -97,7 +118,7 @@ var Westeros;
             function SelectiveNamePrinterVisitor() {
             }
             SelectiveNamePrinterVisitor.prototype.visit = function (memberOfArmy) {
-                if (memberOfArmy._type == "Westeros.Army.Knight") {
+                if (memberOfArmy instanceof Westeros.Army.Knight) {
                     this.VisitKnight(memberOfArmy);
                 } else {
                     console.log("Not a knight");
@@ -113,5 +134,12 @@ var Westeros;
     var Army = Westeros.Army;
 })(Westeros || (Westeros = {}));
 
-var b = new Westeros.Army.VisitorExample();
+console.log("Instance of");
+var a = new Westeros.Army.InstanceOfExample();
+a.Execute();
+console.log("Type of");
+var b = new Westeros.Army.IfExample();
 b.Execute();
+console.log("Internal type");
+var c = new Westeros.Army.VisitorExample();
+c.Execute();

@@ -32,6 +32,10 @@ module Westeros.Banking{
 	export class BankAccountManager{
 		private balance: number;
 		private currentState: IState;
+		constructor() {
+		    this.currentState = new GoodStandingState(this);
+		}
+
 		public Deposit(amount: number)
 		{
 			this.currentState.Deposit(amount);
@@ -41,9 +45,9 @@ module Westeros.Banking{
 		{
 			this.currentState.Withdraw(amount);
 		}
-		public addToBalance(newBalance: number)
+		public addToBalance(amount: number)
 		{
-			this.balance = newBalance;
+			this.balance += amount;
 		}
 		public getBalance():number{
 			return this.balance;

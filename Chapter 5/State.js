@@ -26,6 +26,7 @@ var Westeros;
 
         var BankAccountManager = (function () {
             function BankAccountManager() {
+                this.currentState = new GoodStandingState(this);
             }
             BankAccountManager.prototype.Deposit = function (amount) {
                 this.currentState.Deposit(amount);
@@ -34,8 +35,8 @@ var Westeros;
             BankAccountManager.prototype.Withdraw = function (amount) {
                 this.currentState.Withdraw(amount);
             };
-            BankAccountManager.prototype.addToBalance = function (newBalance) {
-                this.balance = newBalance;
+            BankAccountManager.prototype.addToBalance = function (amount) {
+                this.balance += amount;
             };
             BankAccountManager.prototype.getBalance = function () {
                 return this.balance;
