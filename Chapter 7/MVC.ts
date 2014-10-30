@@ -20,7 +20,7 @@ module Westeros.Meta.CastleDesign{
 
 	export class CreateCastleView implements IView{
 		constructor(public document: HTMLElement, public controller: Controller, public model?: Model, public validationResult?: ValidationResult){
-			this.document.getElementById("saveButton").addEventListener("click", this.saveCastle);
+			this.document.getElementById("saveButton").addEventListener("click", () => this.saveCastle());
 			this.document.getElementById("castleName").value = model.name;
 			this.document.getElementById("description").value = model.description;
 			this.document.getElementById("outerWallThickness").value = model.outerWallThickness;

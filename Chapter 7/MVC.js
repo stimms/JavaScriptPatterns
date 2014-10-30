@@ -29,11 +29,14 @@ var Westeros;
 
             var CreateCastleView = (function () {
                 function CreateCastleView(document, controller, model, validationResult) {
+                    var _this = this;
                     this.document = document;
                     this.controller = controller;
                     this.model = model;
                     this.validationResult = validationResult;
-                    this.document.getElementById("saveButton").addEventListener("click", this.saveCastle);
+                    this.document.getElementById("saveButton").addEventListener("click", function () {
+                        return _this.saveCastle();
+                    });
                     this.document.getElementById("castleName").value = model.name;
                     this.document.getElementById("description").value = model.description;
                     this.document.getElementById("outerWallThickness").value = model.outerWallThickness;

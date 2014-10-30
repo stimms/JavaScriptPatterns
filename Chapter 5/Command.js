@@ -1,14 +1,6 @@
 var Westeros;
 (function (Westeros) {
     (function (Communication) {
-        var simpleCommand = new Array();
-        simpleCommand.push(new LordInstructions().BringTroops);
-        simpleCommand.push("King's Landing");
-        simpleCommand.push(500);
-        simpleCommand.push(new Date());
-
-        simpleCommand[0](simpleCommand[1], simpleCommand[2], simpleCommand[3], simpleCommand[4], simpleCommand[5], simpleCommand[6]);
-
         var BringTroopsCommand = (function () {
             function BringTroopsCommand(location, numberOfTroops, when) {
                 this._location = location;
@@ -32,6 +24,14 @@ var Westeros;
             return LordInstructions;
         })();
         Communication.LordInstructions = LordInstructions;
+
+        var simpleCommand = new Array();
+        simpleCommand.push(new LordInstructions().BringTroops);
+        simpleCommand.push("King's Landing");
+        simpleCommand.push(500);
+        simpleCommand.push(new Date());
+
+        simpleCommand[0](simpleCommand[1], simpleCommand[2], simpleCommand[3], simpleCommand[4], simpleCommand[5], simpleCommand[6]);
     })(Westeros.Communication || (Westeros.Communication = {}));
     var Communication = Westeros.Communication;
 })(Westeros || (Westeros = {}));

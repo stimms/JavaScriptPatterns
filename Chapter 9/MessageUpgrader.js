@@ -1,12 +1,7 @@
 var Login;
 (function (Login) {
     var CreateUserv1Message = (function () {
-        function CreateUserv1Message(UserName, FirstName, LastName, EMail) {
-            this.UserName = UserName;
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.EMail = EMail;
-            this.__messageName = "CreateUserv1Message";
+        function CreateUserv1Message() {
         }
         return CreateUserv1Message;
     })();

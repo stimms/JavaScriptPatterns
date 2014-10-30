@@ -29,9 +29,12 @@ var Westeros;
 
             var CreateCastleView = (function () {
                 function CreateCastleView(document, viewModel) {
+                    var _this = this;
                     this.document = document;
                     this.viewModel = viewModel;
-                    this.document.getElementById("saveButton").addEventListener("click", this.saveCastle);
+                    this.document.getElementById("saveButton").addEventListener("click", function () {
+                        return _this.saveCastle();
+                    });
                     this.document.getElementById("name").addEventListener("change", this.nameChangedInView);
                     this.document.getElementById("description").addEventListener("change", this.descriptionChangedInView);
                     this.document.getElementById("outerWallThickness").addEventListener("change", this.outerWallThicknessChangedInView);

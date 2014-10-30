@@ -77,3 +77,12 @@ var Westeros;
     })();
     Westeros.Attendee = Attendee;
 })(Westeros || (Westeros = {}));
+
+var god1 = new Westeros.Religion.SevenGodsAdapter();
+var god2 = new Westeros.Religion.DrownedGodAdapter();
+var god3 = new Westeros.Religion.OldGodsAdapter();
+
+var gods = [god1, god2, god3];
+for(var i =0; i<gods.length; i++){
+  gods[i].praryTo();
+}
