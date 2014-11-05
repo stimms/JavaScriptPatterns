@@ -37,8 +37,9 @@ module Westeros.Transportation{
 }
 
 module Azure.Settings{
-  public interface SettingSaver{
+  export interface SettingSaver{
     Save(settings: Settings);
     Retrieve():Settings;
   }
+  export interface Settings{}
 }

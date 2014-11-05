@@ -11,7 +11,7 @@ var Westeros;
             Fleet.prototype.resupply = function () {
             };
 
-            Fleet.prototype.attach = function (destination) {
+            Fleet.prototype.attack = function (destination) {
                 //attack a city
             };
             return Fleet;
