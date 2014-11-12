@@ -7,12 +7,12 @@ module Westeros.JudicialSystem{
   }
 
   export interface ComplaintListener{
-    IsInterestedInComplaint(complaint: Complaint): boolean;
+    IsAbleToResolveComplaint(complaint: Complaint): boolean;
     ListenToComplaint(complaint: Complaint): string;
   }
 
   export class ClerkOfTheCourt implements ComplaintListener{
-    IsInterestedInComplaint(complaint: Complaint): boolean{
+    IsAbleToResolveComplaint(complaint: Complaint): boolean{
       //decide if this is a complaint which can be solved by the clerk
       return false;
     }
@@ -26,7 +26,7 @@ module Westeros.JudicialSystem{
   }
 
   export class King implements ComplaintListener{
-    IsInterestedInComplaint(complaint: Complaint): boolean{
+    IsAbleToResolveComplaint(complaint: Complaint): boolean{
       return true;
     }
 
@@ -49,7 +49,7 @@ module Westeros.JudicialSystem{
     public ResolveComplaint(complaint: Complaint): string{
       for(var i = 0; i<this.complaintListeners.length; i++)
       {
-        if(this.complaintListeners[i].IsInterestedInComplaint(complaint))
+        if(this.complaintListeners[i].IsAbleToResolveComplaint(complaint))
         {
           return this.complaintListeners[i].ListenToComplaint(complaint);
         }

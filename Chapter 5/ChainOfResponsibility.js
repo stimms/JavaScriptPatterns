@@ -14,7 +14,7 @@ var Westeros;
         var ClerkOfTheCourt = (function () {
             function ClerkOfTheCourt() {
             }
-            ClerkOfTheCourt.prototype.IsInterestedInComplaint = function (complaint) {
+            ClerkOfTheCourt.prototype.IsAbleToResolveComplaint = function (complaint) {
                 //decide if this is a complaint which can be solved by the clerk
                 return false;
             };
@@ -31,7 +31,7 @@ var Westeros;
         var King = (function () {
             function King() {
             }
-            King.prototype.IsInterestedInComplaint = function (complaint) {
+            King.prototype.IsAbleToResolveComplaint = function (complaint) {
                 return true;
             };
 
@@ -52,7 +52,7 @@ var Westeros;
             }
             ComplaintResolver.prototype.ResolveComplaint = function (complaint) {
                 for (var i = 0; i < this.complaintListeners.length; i++) {
-                    if (this.complaintListeners[i].IsInterestedInComplaint(complaint)) {
+                    if (this.complaintListeners[i].IsAbleToResolveComplaint(complaint)) {
                         return this.complaintListeners[i].ListenToComplaint(complaint);
                     }
                 }
