@@ -1,18 +1,22 @@
-var sinon = require("sinon");
-
-var ToSpyUpon = (function () {
-    function ToSpyUpon() {
+var SpyUpon = (function () {
+    function SpyUpon() {
     }
-    ToSpyUpon.prototype.AddNumbers = function (number1, number2) {
-        throw new Exception("oops");
-        return number1 + number2;
+    SpyUpon.prototype.write = function (toWrite) {
+        console.log(toWrite);
+        return 7;
     };
-    return ToSpyUpon;
+    return SpyUpon;
 })();
 
-var thing = new ToSpyUpon();
-var spy = sinon.spy(thing, "AddNumbers");
-thing.AddNumbers(1, 2);
-console.log(spy.called);
-console.log(spy.args[0][1]);
-console.dir(spy);
+var spyUpon = new SpyUpon();
+spyUpon._write = spyUpon.write;
+spyUpon.write = function (arg1, arg2, arg3, arg4, arg5) {
+    this.called = true;
+    this.args = arguments;
+    this.result = this._write(arg1, arg2, arg3, arg4, arg5);
+    return this.result;
+};
+console.log(spyUpon.write("hello world"));
+console.log(spyUpon.called);
+console.log(spyUpon.args);
+console.log(spyUpon.result);
